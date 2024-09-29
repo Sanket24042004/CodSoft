@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<header>
+    <h1>Sanket Waghmare</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <p class="intro">Hi, my name is</p>
+    <h1 class="name">Sanket Waghmare</h1>
+    <h2 class="tagline">I build things for the web.</h2>
+    <p class="description">
+        I'm a software engineer specializing in building exceptional digital experiences.
+        Currently, I'm focused on building beautiful websites across the web.
+    </p>
+</section>
+
+<section id="about" class="container">
+    <h2>About Me</h2>
+    <img src="./images/profile.png" alt="Sanket" style="width:120px; height:200px; border-radius:10%;">
+    <p>I’m a passionate software engineer with a focus on building web applications that prioritize performance, accessibility, and user experience. With experience in front-end and back-end development, I love crafting solutions that bridge the gap between design and technology. I specialize in technologies like JavaScript, React, and Node.js, and enjoy staying up-to-date with the latest industry trends. When I’m not coding, you’ll find me exploring new tech, reading, or working on personal projects.</p>
+</section>
+
+<section id="skills" class="container">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+    </ul>
+</section>
+
+<section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="projects">
+        <h3>LANDING PAGE</h3>
+        <p>Creating a personal portfolio using CSS and HTML is a popular beginner web development project.</p>
+        <img src="./images/landingpage.png" alt="Project 1">
+        <br><br><br>
+        <h3>CALCULATOR</h3>
+        <p>A brief description of your project.</p>
+        <img src="./images/calculator.png" alt="Project 2">
+    </div>
+</section>
+
+<section id="resume" class="container">
+    <h2>Resume</h2>
+    <a href="resume.pdf" class="cta-btn" download>Download My Resume</a>
+</section>
+
+<section id="contact" class="container">
+    <h2>Contact</h2>
+    <p>Email: sw24042004@gmail.com</p>
+    <p>Phone: +91 7499589401</p>
+</section>
+
+<footer>
+    <div class="email">sw24042004@gmail.com</div>
+    <div class="copyright">&copy; 2024 Sanket Waghmare. All rights reserved.</div>
+</footer>
+
+<script>
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
